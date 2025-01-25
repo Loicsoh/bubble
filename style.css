@@ -14,21 +14,21 @@ h3{
     text-shadow: 0 0 10px #333;
 }
 .bubble{
-    /* position: absolute;
-    width: 10px; */
-    height: 10px;
+    
+   position: absolute;
     align-items: center;
     background: rgba(255, 155, 0, 0.6);
     border-radius: 50%;
-    pointer-events: none;
-    animation: bubble 1s linear infinite;
+
+    opacity: 0;
+    animation: anim 8s forwards;
     filter: hue-rotate(0deg);
 }
 
-@keyframes anuim{
+@keyframes anim{
     to{
         top : -255px;
-        let :var(--left);
+        left :var(--left);
         opacity: 1;
         filter: hue-rotate(720deg);
     }
