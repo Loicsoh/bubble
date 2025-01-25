@@ -17,8 +17,19 @@ h3{
     /* position: absolute;
     width: 10px; */
     height: 10px;
+    align-items: center;
     background: rgba(255, 155, 0, 0.6);
     border-radius: 50%;
     pointer-events: none;
     animation: bubble 1s linear infinite;
+    filter: hue-rotate(0deg);
+}
+
+@keyframes anuim{
+    to{
+        top : -255px;
+        let :var(--left);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
 }
