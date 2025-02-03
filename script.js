@@ -30,6 +30,6 @@ bubble.addEventListener('click', () => {
 }
 
 setInterval(bubblemaker, 2000);
-
-
-
+setTimeout(() => {
+    bubble.remove();
+}, 10000);
